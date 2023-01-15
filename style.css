@@ -1,0 +1,45 @@
+body {
+    background-color: lightblue;
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    font-size: 60px;
+}
+
+#file,
+#file1, 
+#file2{
+    font-size: 20px;
+    margin-left: 190px;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: black;
+    font-size: 30px;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+#text {
+    width: 50%;
+    height: 500px;
+}
+
+#textOne {
+    width: 50%;
+    height: 250px;
+}
+
+#textTwo {
+    width: 50%;
+    height: 250px;
+}
+
+
