@@ -12,7 +12,11 @@
 <body>
     <h1 id= "title">Plagiarism Detector </h1>
     <p>Please insert a file to be checked</p>
-    <input id= "file" type = "file"><br>
+    <h1>{{errorFileInput}}<h1>
+    <form method="POST">
+        <input id= "file" type = "file" name = "file"><br>
+        <input id= "fileSubmit" type="submit"></input>
+    </form>
 
 
     <a class="link" href="/">Go back</a>

@@ -10,9 +10,13 @@
 </head>
 
 <body>
-    <h1 id= "title">Plagiarism Detector </h1>
+    <h1 id="title">Plagiarism Detector </h1>
     <p>Please enter text input</p>
-    <textarea id="text"></textarea>
+    <h1>{{errorTextInput}}<h1>
+    <form method="POST">
+        <textarea id="text" name="text"></textarea>
+        <input id= "textSubmit" type="submit"></input>
+    </form>
     <a class="link" href="/">Go back</a>
 </body>
 

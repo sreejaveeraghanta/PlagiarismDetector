@@ -12,14 +12,18 @@
 <body>
     <h1 id= "title">Plagiarism Detector </h1>
     <p>Please enter text seperately</p>
-    <section> 
-        <h3>Input1</h3>
-        <textarea id = "textOne"></textarea>
-    </section>
-    <section> 
-        <h3>Input2</h3>
-        <textarea id = "textTwo"></textarea>
-    </section>
+    <h1>{{errorTextsInput}}<h1>
+    <form method="POST">
+        <section> 
+            <h3>Input1</h3>
+            <textarea id = "textOne" name="text1"></textarea>
+        </section>
+        <section> 
+            <h3>Input2</h3>
+            <textarea id = "textTwo" name="text2"></textarea>
+        </section>
+        <input id= "textsSubmit" type="submit"></input>
+    </form>
 
     <a class="link" href="/">Go back</a>
 </body>

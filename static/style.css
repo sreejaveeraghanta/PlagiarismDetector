@@ -26,6 +26,16 @@ p {
     font-size: 20px;
 }
 
+#textSubmit, 
+#textsSubmit, 
+#fileSubmit, 
+#filesSubmit {
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 50px
+}
+
 
 #text {
     width: 50%;

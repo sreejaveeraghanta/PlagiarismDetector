@@ -11,8 +11,13 @@
 
 <body>
     <h1 id= "title">Plagiarism Detector </h1>
-    <input id= "file1" type = "file"> <br>
-    <input id= "file2" type = "file"> <br>
+    <p>Please choose two files</p>
+    <h1>{{errorFilesInput}}<h1>
+    <form method="POST">
+        <input id= "file1" name="file1" type = "file"> <br>
+        <input id= "file2" name="file2" type = "file"> <br>
+        <input id= "filesSubmit" type="submit"></input>
+    </form>
     <a class="link" href="/">Go back</a>
 </body>
 
