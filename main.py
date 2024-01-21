@@ -33,7 +33,7 @@ def filesInputRead():
     file1 = request.form['file1']
     file2 = request.form['file2']
     if (file1 != "" or file2 != ""):
-        return "The similarity is: " + functions.checkSimilarity(file1, file2)
+        return "The similarity is: " + str(functions.checkSimilarity(file1, file2))
     else: 
         return render_template("fileVsfile.html", errorFilesInput="Invalid: please choose two files")
 
@@ -62,7 +62,7 @@ def textsInputRead():
     text1 = request.form['text1']
     text2 = request.form['text2']
     if (text1 != "" and text2 != ""):
-        return "The similarity is: " + functions.checkSimilarity(text1, text2)
+        return "The similarity is: " + str(functions.checkSimilarity(text1, text2))
     else: 
         return render_template("textVstext.html", errorTextsInput="Invalid: please type something in both text fields")
 

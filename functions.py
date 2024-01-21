@@ -55,6 +55,7 @@ def readFile(file):
     open('file', 'r')
 
 
+print(tokenizer("bob the builder, can you fix it?"))
 print(checkSimilarity("\n \t Bob bob!       The Builder? can we fix it? YES, we can!     ", "Bob the builder"))
 
 
