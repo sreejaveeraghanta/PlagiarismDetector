@@ -1,5 +1,3 @@
-from difflib import SequenceMatcher
-
 def removePunctuation(text):
     result = ""
     punctuation = [",", ".", "!", "?", "(", ")", ":", ";", "-"]
@@ -38,14 +36,26 @@ def tokenizer(text):
     return result
 
 def checkSimilarity(input1, input2): 
-    output = SequenceMatcher(None, input1, input2).ratio()
-    return str("%.2f" % (output*100))
+    words1 = tokenizer(input1)
+    words2 = tokenizer(input2)
+    ## want to check for similiarity in terms of continuous words rather tahn every single one
+
+    count = 0
+    for word in words1: 
+        for word2 in words2: 
+            if word == word2: 
+                count+=1
+                print(word)
+    if len(words1) > len(words2): 
+        return (count / len(words1)) * 100
+    else: 
+        return (count / len(words2)) * 100
 
 def readFile(file):
     open('file', 'r')
 
 
-print(checkSimilarity("\n \t Bob!       The Builder? can we fix it? no. we can't, hahahah     ", "Bob the builder"))
+print(checkSimilarity("\n \t Bob bob!       The Builder? can we fix it? YES, we can!     ", "Bob the builder"))
 
 
 
